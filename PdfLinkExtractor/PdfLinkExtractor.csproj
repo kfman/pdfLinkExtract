@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <LangVersion>9</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="iTextSharp" Version="5.5.13.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="pdf\289c90948ed67d11a0c55fddd2017dbd.pdf" />
+      <Content Include="pdf\289c90948ed67d11a0c55fddd2017dbd.pdf">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+</Project>
